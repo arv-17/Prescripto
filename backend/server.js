@@ -15,7 +15,11 @@ connectCloudinary();
 
 // middlewares
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+    origin: ['https://prescripto-admin-oj5w.onrender.com','https://prescripto-frontend-hfe6.onrender.com',
+             'http://localhost:5174','http://localhost:5173'],
+    credentials: true
+}))
 
 
 // api endpoints
