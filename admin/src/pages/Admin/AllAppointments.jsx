@@ -37,7 +37,7 @@ const AllAppointments = () => {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100 text-gray-700">
-              {appointments.map((appt,index) => (
+              {appointments?.reverse().map((appt,index) => (
                 <tr key={index}>
                   <td className="px-4 py-3">{index+1}</td>
                   <td className="px-4 py-3 flex items-center gap-2">
